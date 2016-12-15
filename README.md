@@ -25,4 +25,4 @@ All gulp tasks are specify on ```gulp-tasks``` folder. Paths declared in gulp ta
 
 ## Documentation
 
-After building, go to http://localhost:4002 to reach all documentation
+After building, go to [http://localhost:4002](http://localhost:4002) to reach all documentation
