@@ -22,7 +22,8 @@ gulp.task('watch', function() {
 
         gulp.watch([
             paths.internalComponents + '**/*.js',
-            paths.docs
+            paths.docs.install,
+            paths.docs.api
         ], ['docs']);
 
         // Watch .less files
