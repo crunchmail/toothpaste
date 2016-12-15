@@ -36,8 +36,7 @@ var paths = require('../gulp.config.json');
 
 var dist = paths.dist + argv.env + '/';
 
-var configApiFile = argv.config === '' ? '../' + paths.configFile + argv.env + '-constant' : '../' + paths.configFile + argv.config;
-var configApi = require(configApiFile);
+var configApiFile = argv.config === '' ? paths.configFile + argv.env + '-constant' : paths.configFile + argv.config;
 
 // Config
 gulp.task("config", function() {

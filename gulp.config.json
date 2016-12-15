@@ -1,5 +1,5 @@
 {
-    "configFile": "./src/app/config/",
+    "configFile": "src/app/config/",
     "dist": "dist/",
     "cdn": "cdn/",
     "frontendDirectives": "src/components/frontend-directives/",
