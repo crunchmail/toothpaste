@@ -13,8 +13,8 @@
     "tests"
   ],
   "dependencies": {
-    "frontend-directives": "git+ssh://git@github.com:crunchmail/frontend-directives.git#0.1.0",
-    "frontend-assets": "git+ssh://git@github.com:crunchmail/frontend-assets.git#0.1.0",
+    "frontend-directives": "git+https://github.com/crunchmail/frontend-directives#0.1.0",
+    "frontend-assets": "git+https://github.com/crunchmail/frontend-assets#0.1.0",
     "angularjs-color-picker": "~1.0.1",
     "color-thief": "*",
     "toothpick": "*",
