@@ -1,0 +1,5 @@
+<button class="icon-replay btn classic-btn" ng-click="resetValue()"></button>
+<div class="customSelect">
+    <select ng-model="value" ng-options="item.value as item.name for item in selectValue" ng-change="change()"></select>
+    <div class="customSelectDiv">{{value}}</div>
+</div>

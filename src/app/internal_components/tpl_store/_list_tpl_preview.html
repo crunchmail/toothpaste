@@ -1,0 +1,14 @@
+<div ng-class="{'active': tplPreview.active}" class="tpl-preview">
+    <div class="tpl-content-preview">
+        <div translate class="tpl-close-preview" ng-click="showPreview(tplPreview)">Close</div>
+        <h3>{{tplPreview.name}}</h3>
+        <div class="containerIframe">
+            <div>
+                <img ng-src="{{tplPreview.thumbnail_url}}" alt=""/>
+            </div>
+        </div>
+        <a ng-click="removeBodyClass()" href="#/editeur/{{tplPreview.url | encodeUrl}}/template" class="btn small-btn" translate>Choose this model</a>
+        <button ng-hide="tplIndex === 0" class="navigate-btn prev" ng-click="prevTpl()">‹</button>
+        <button ng-hide="tplIndex === allTpl.length - 1" class="navigate-btn next" ng-click="nextTpl()">›</button>
+    </div>
+</div>

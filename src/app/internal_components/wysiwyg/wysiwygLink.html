@@ -1,0 +1,18 @@
+<div class="form-wysiwyg">
+    <label for="linkButton" translate>Link</label>
+    <ul class="group-input-radio">
+        <li ng-repeat="protocol in protocols">
+            <input id="radio-{{id}}_{{$index}}" name="protocol-{{id}}" type="radio" ng-value="protocol.value" ng-model="$parent.init.protocol" ng-change="changeProtocol()"/>
+            <label for="radio-{{id}}_{{$index}}">{{protocol.text}}</label>
+        </li>
+    </ul>
+    <input ng-show="init.protocol !== 'files' && init.protocol !== 'mailto:'" id="linkButton" type="text" ng-model="init.link" ng-change="changeLink()" placeholder="ex: example.com" />
+    <input ng-show="init.protocol === 'mailto:'" type="text" ng-model="init.mail" ng-change="changeMail()" placeholder="ex: exemple@example.com" />
+    <div ng-show="init.protocol === 'files'">
+        <cm-filereader callback-file="uploadFile(file)"></cm-filereader>
+    </div>
+    <p>
+        <label for="textButton" translate>Link text</label>
+        <input id="textButton" type="text" ng-model="initText" ng-change="changeText()" />
+    </p>
+</div>

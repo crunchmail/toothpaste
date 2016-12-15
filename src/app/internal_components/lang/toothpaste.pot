@@ -1,0 +1,515 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: wysiwyg/wysiwyg.directive.js:68
+msgid "Add a link"
+msgstr ""
+
+#: wysiwyg/wysiwygFooter.html:37
+msgid "Add logo"
+msgstr ""
+
+#: wysiwyg/linkModal.html:14
+msgid "Address"
+msgstr ""
+
+#: tpl_store/_list_tpl.html:9
+#: wysiwyg/wysiwygFooter.html:27
+msgid "Advanced options"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:59
+#: wysiwyg/wysiwyg.directive.js:60
+msgid "Align content left"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:61
+#: wysiwyg/wysiwyg.directive.js:62
+msgid "Align content right"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:988
+msgid "Are you sure to change page? Your unsaved changes will be lost."
+msgstr ""
+
+#: _directives/changeColorSet.directive.js:28
+msgid "Are you sure you want to delete this colorset ?"
+msgstr ""
+
+#: editeur/_editeur.html:107
+msgid "Are you sure you want to delete this container ?"
+msgstr ""
+
+#: tpl_store/_list_tpl.html:30
+msgid "Are you sure you want to delete this template ?"
+msgstr ""
+
+#: editeur/_editeur.html:2
+msgid "Back to template choice"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:69
+msgid "Background Color"
+msgstr ""
+
+#: wysiwyg/containerEdit.directive.js:53
+#: wysiwyg/wysiwygButton.html:4
+#: wysiwyg/wysiwygFooter.directive.js:43
+#: wysiwyg/wysiwygHeader.directive.js:33
+msgid "Background color"
+msgstr ""
+
+#: wysiwyg/wysiwygBgColor.html:2
+msgid "Background color :"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:928
+msgid "Block saved"
+msgstr ""
+
+#: editeur/_editeur.html:190
+#: editeur/_editeur.html:215
+msgid "Blocks"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:55
+msgid "Bold"
+msgstr ""
+
+#: editeur/_dialogNamePrivTpl.html:6
+#: tpl_store/importHtmlDialog.html:11
+msgid "Cancel"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:63
+#: wysiwyg/wysiwyg.directive.js:64
+msgid "Center content"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:56
+msgid "Change font family"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:57
+msgid "Change font size"
+msgstr ""
+
+#: tpl_store/_list_tpl_preview.html:10
+msgid "Choose this model"
+msgstr ""
+
+#: tpl_store/_list_tpl_preview.html:3
+msgid "Close"
+msgstr ""
+
+#: _directives/changeColorSet.directive.js:158
+msgid "Color Set created"
+msgstr ""
+
+#: _directives/changeColorSet.directive.js:165
+msgid "Color Set deleted"
+msgstr ""
+
+#: _directives/changeColorSet.directive.js:167
+msgid "Color Set not deleted"
+msgstr ""
+
+#: editeur/_editeur.html:191
+msgid "Colors"
+msgstr ""
+
+#: editeur/_editeur.html:198
+msgid "Containers"
+msgstr ""
+
+#: editeur/_editStyleSet.html:18
+msgid "Containers alignment"
+msgstr ""
+
+#: editeur/_editStyleSet.html:10
+msgid "Containers padding"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:119
+#: editeur/appEditeur.directive.js:757
+msgid "Draft saved"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:718
+msgid "Draft updated"
+msgstr ""
+
+#: editeur/_editeur.html:249
+msgid "Elements"
+msgstr ""
+
+#: wysiwyg/linkModal.html:5
+msgid "Email address"
+msgstr ""
+
+#: tpl_store/_list_tpl.html:47
+msgid "Empty layout"
+msgstr ""
+
+#: editeur/_dialogNamePrivTpl.html:3
+msgid "Enter a name for your template :"
+msgstr ""
+
+#: wysiwyg/wysiwygFooter.html:40
+msgid "Explanations on the message's origin"
+msgstr ""
+
+#: wysiwyg/wysiwygLink.directive.js:153
+msgid "File added"
+msgstr ""
+
+#: wysiwyg/wysiwygLink.directive.js:36
+msgid "Files"
+msgstr ""
+
+#: editeur/_editStyleSet.html:43
+msgid "Font Family"
+msgstr ""
+
+#: _directives/changeColorSet.directive.js:8
+msgid "Generic color sets"
+msgstr ""
+
+#: tpl_store/_list_tpl.html:55
+msgid "Import my HTML"
+msgstr ""
+
+#: editeur/_editStyleSet.html:14
+msgid "Inner containers padding"
+msgstr ""
+
+#: editeur/_editeur.html:68
+msgid "Insert block or container"
+msgstr ""
+
+#: editeur/_editeur.html:95
+msgid "Insert element"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:66
+msgid "Italic"
+msgstr ""
+
+#: editeur/_editStyleSet.html:2
+msgid "Layout"
+msgstr ""
+
+#: wysiwyg/wysiwygLink.html:2
+msgid "Link"
+msgstr ""
+
+#: wysiwyg/wysiwygFooter.html:11
+#: wysiwyg/wysiwygFooter.html:24
+#: wysiwyg/wysiwygHeader.html:15
+#: wysiwyg/wysiwygHeader.html:20
+msgid "Link Text"
+msgstr ""
+
+#: wysiwyg/wysiwygLink.html:15
+msgid "Link text"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:130
+#: editeur/appEditeur.directive.js:611
+#: importHtml/importHtml.directive.js:46
+msgid "Message updated"
+msgstr ""
+
+#: editeur/_editeur.html:232
+msgid "My Blocks"
+msgstr ""
+
+#: _directives/changeColorSet.directive.js:19
+msgid "My color sets"
+msgstr ""
+
+#: tpl_store/_list_tpl.html:8
+msgid "My templates"
+msgstr ""
+
+#: editeur/_dialogNamePrivTpl.html:7
+#: tpl_store/importHtmlDialog.html:12
+#: wysiwyg/colorModal.html:11
+#: wysiwyg/linkModal.html:18
+msgid "OK"
+msgstr ""
+
+#: editeur/_editStyleSet.html:59
+msgid "Other Titles"
+msgstr ""
+
+#: editeur/_editeur.html:282
+msgid "Others stylesets"
+msgstr ""
+
+#: tpl_store/importHtmlDialog.html:8
+msgid "Paste your html..."
+msgstr ""
+
+#: tpl_store/_list_tpl.html:7
+msgid "Pick a template"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:483
+msgid "Please enter a correct value"
+msgstr ""
+
+#: wysiwyg/imgHandler.directive.js:25
+msgid "Please upload an image. Other file types are not supported."
+msgstr ""
+
+#: wysiwyg/wysiwygFooter.html:44
+msgid "Postal Address"
+msgstr ""
+
+#: wysiwyg/wysiwygHeader.html:30
+msgid "Preheader text"
+msgstr ""
+
+#: editeur/_editeur.html:3
+msgid "Preview"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:67
+msgid "Remove all styles"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:70
+msgid "Remove link"
+msgstr ""
+
+#: tpl_store/_list_tpl.html:3
+msgid "Return to edition"
+msgstr ""
+
+#: tpl_store/_list_tpl.html:2
+msgid "Return to message details"
+msgstr ""
+
+#: editeur/_editeur.html:5
+#: importHtml/importHtml.html:3
+msgid "Save"
+msgstr ""
+
+#: editeur/_editeur.html:18
+msgid "Save and exit"
+msgstr ""
+
+#: importHtml/importHtml.html:4
+msgid "Save and quit"
+msgstr ""
+
+#: editeur/_editeur.html:9
+msgid "Save as new template"
+msgstr ""
+
+#: editeur/_editeur.html:270
+msgid "Save new palette"
+msgstr ""
+
+#: wysiwyg/containerEdit.directive.js:30
+msgid "Set container to full width"
+msgstr ""
+
+#: editeur/_editeur.html:192
+msgid "Styles"
+msgstr ""
+
+#: wysiwyg/fontSizeModal.html:3
+msgid "Taille du texte :"
+msgstr ""
+
+#: editeur/_editStyleSet.html:70
+msgid "Template Style"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:649
+msgid "Template saved"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:647
+msgid "Template updated"
+msgstr ""
+
+#: editeur/_editStyleSet.html:63
+#: wysiwyg/wysiwygFooter.html:15
+#: wysiwyg/wysiwygFooter.html:20
+#: wysiwyg/wysiwygHeader.html:11
+#: wysiwyg/wysiwygHeader.html:24
+msgid "Text"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:58
+#: wysiwyg/wysiwygButton.html:9
+#: wysiwyg/wysiwygFooter.directive.js:47
+#: wysiwyg/wysiwygHeader.directive.js:37
+msgid "Text color"
+msgstr ""
+
+#: wysiwyg/wysiwygFooter.directive.js:45
+#: wysiwyg/wysiwygHeader.directive.js:35
+msgid "Text link color"
+msgstr ""
+
+#: editeur/_editStyleSet.html:47
+msgid "Title 1"
+msgstr ""
+
+#: editeur/_editStyleSet.html:51
+msgid "Title 2"
+msgstr ""
+
+#: editeur/_editStyleSet.html:55
+msgid "Title 3"
+msgstr ""
+
+#: editeur/_editStyleSet.html:39
+msgid "Typography"
+msgstr ""
+
+#: wysiwyg/linkModal.html:10
+#: wysiwyg/linkModal.html:4
+msgid "URL"
+msgstr ""
+
+#: wysiwyg/wysiwyg.directive.js:65
+msgid "Underline"
+msgstr ""
+
+#: editeur/_editeur.html:297
+msgid "Undo"
+msgstr ""
+
+#: importHtml/importHtml.html:5
+msgid "Update"
+msgstr ""
+
+#: importHtml/importHtml.html:6
+msgid "Update and quit"
+msgstr ""
+
+#: editeur/_editeur.html:12
+msgid "Update the template"
+msgstr ""
+
+#: _directives/fileReader.html:1
+msgid "Upload your file"
+msgstr ""
+
+#: _directives/imgFileRead.html:1
+msgid "Upload your image"
+msgstr ""
+
+#: wysiwyg/wysiwygHeader.html:29
+msgid "Visible text in the pre-load of your email"
+msgstr ""
+
+#: editeur/_editStyleSet.html:6
+msgid "Width"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:575
+msgid "You have an unsaved Color Set, do you want to save it?"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:663
+#: editeur/appEditeur.directive.js:743
+#: editeur/appEditeur.directive.js:784
+msgid "You must add a color set"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:136
+msgid "You must first add a color set"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:139
+msgid "You must first select a style set"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:666
+#: editeur/appEditeur.directive.js:746
+#: editeur/appEditeur.directive.js:787
+msgid "You must select a style set"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:133
+#: editeur/appEditeur.directive.js:780
+msgid "Your draft has not been saved"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:739
+msgid "Your draft has not been updated"
+msgstr ""
+
+#: wysiwyg/wysiwygLink.directive.js:155
+msgid "Your file haven't been added"
+msgstr ""
+
+#: _factory/uploadStore.factory.js:104
+msgid "Your file is too large"
+msgstr ""
+
+#: tpl_store/importHtmlDialog.html:5
+msgid "Your html content is invalid"
+msgstr ""
+
+#: _factory/uploadStore.factory.js:85
+msgid "Your image is too large"
+msgstr ""
+
+#: tpl_store/importHtmlDialog.directive.js:42
+msgid "Your message has been created"
+msgstr ""
+
+#: tpl_store/importHtmlDialog.directive.js:54
+msgid "Your message has been updated"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:614
+msgid "Your message has not been updated"
+msgstr ""
+
+#: tpl_store/importHtmlDialog.directive.js:46
+msgid "Your message hasn't been created"
+msgstr ""
+
+#: tpl_store/importHtmlDialog.directive.js:57
+msgid "Your message hasn't been updated"
+msgstr ""
+
+#: tpl_store/listTpl.directive.js:52
+msgid "Your template has been deleted"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:658
+msgid "Your template has not been saved"
+msgstr ""
+
+#: editeur/appEditeur.directive.js:656
+msgid "Your template has not been updated"
+msgstr ""
+
+#: wysiwyg/wysiwygLink.html:9
+msgid "ex: example.com"
+msgstr ""
+
+#: wysiwyg/wysiwygLink.html:10
+msgid "ex: exemple@example.com"
+msgstr ""
+
+#: editeur/_editStyleSet.html:32
+#: wysiwyg/wysiwygHeader.html:34
+msgid "show header"
+msgstr ""
+
+#: editeur/_editeur.html:107
+msgid "{{'Are you sure you want to delete this container ?' | translate}}"
+msgstr ""

@@ -1,0 +1,12 @@
+<form class="modalColor" ng-submit="applyColor()">
+    <div class="form-group">
+        <h3 class="titleModal">Couleur du texte :</h3>
+        <div class="contentModal">
+            <color-picker class="colorPicker" color-picker-on-change="changeColor(color)" ng-model="colorText" color-picker-alpha="false" color-picker-format="'hex'"></color-picker>
+            <ul class="ul-reset listingColors">
+                <li style="background-color:{{v}};" ng-repeat="(k, v) in setColors" ng-click="changeColor(v)"></li>
+            </ul>
+        </div>
+    </div>
+    <button translate class="btn small-btn btnModal classic-btn" type="submit">OK</button>
+</form>

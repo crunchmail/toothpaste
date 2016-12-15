@@ -1,0 +1,61 @@
+<div class="top-bar">
+    <a ng-click="returnApp()" class="icon-keyboard-arrow-left cursorPointer" translate>Return to message details</a>
+    <a ng-if="$root.urlDocSaved" class="return-edition cursorPointer" ng-click="returnEdition()" translate>Return to edition</a>
+</div>
+
+<v-tabs class="menu-tpl-listing" horizontal active="tabs.active">
+  <v-tab translate>Pick a template</v-tab>
+  <v-tab translate>My templates</v-tab>
+  <v-tab translate>Advanced options</v-tab>
+</v-tabs>
+
+<v-pages active="tabs.active">
+  <v-page>
+      <ul class="ul-reset list-tpl col4 colMarge col">
+          <li ng-repeat="tpl in listPubTpls">
+              <div ng-click="showPreview(tpl)">
+                  <span class="container-img">
+                      <img ng-src="{{tpl.thumbnail_url}}" alt="{{tpl.name}}"/>
+                  </span>
+                  <span class="tpl-name">{{tpl.name}}</span>
+              </div>
+              <cm-list-tpl-preview tpl-index="$index" all-tpl="listPubTpls" cm-tpl="tpl"></cm-list-tpl-preview>
+          </li>
+      </ul>
+  </v-page>
+  <v-page>
+      <ul class="ul-reset list-tpl col4 colMarge col">
+          <li ng-repeat="tpl in listPrivTpls">
+              <div ng-click="showPreview(tpl)">
+                  <button class="btn x-small-btn icon-remove-circle icon-alone" cm-confirm="Are you sure you want to delete this template ?" ng-click="deleteTpl(tpl.url, $index)"></button>
+                  <span class="container-img">
+                      <img ng-if="tpl.thumbnail_url.length > 0" ng-src="{{tpl.thumbnail_url}}" alt="{{tpl.name}}"/>
+                  </span>
+                  <span class="tpl-name">{{tpl.name}}</span>
+              </div>
+              <cm-list-tpl-preview tpl-index="$index" all-tpl="listPrivTpls" cm-tpl="tpl"></cm-list-tpl-preview>
+          </li>
+      </ul>
+  </v-page>
+  <v-page>
+      <ul class="ul-reset list-tpl col4 colMarge col">
+          <li>
+              <a class="card-link" href="#/editeur/empty">
+                  <span class="text">
+                      <span>+</span>
+                  </span>
+                  <span class="tpl-name" translate>Empty layout</span>
+              </a>
+          </li>
+          <li>
+              <a href="#/import-html">
+                  <span class="text">
+                      <span class="icon-file-upload"></span>
+                  </span>
+                  <span class="tpl-name" translate>Import my HTML</span>
+              </a>
+          </li>
+      </ul>
+
+  </v-page>
+</v-pages>

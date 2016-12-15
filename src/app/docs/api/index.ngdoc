@@ -1,0 +1,90 @@
+@ngdoc overview
+@name Docs Top
+@description
+
+# API documentation
+
+Toothpaste is an editor which allow you to compose an email template. There are several possibilities to create a template, with a basic model, by starting from scratch or by directly import html.
+
+Email creation is separated in 3 parts, blocks addition, colors sets modification and style modification.
+
+## Vocabulary
+
+* **Container** : HTML structure containing one or several empty columns
+* **Block** : HTML structure containing one or several columns with elements
+* **Elements** : Basic HTML elements (Title, button, image...)
+
+## Structure
+
+This application is separated in several modules. Every modules is an application feature.
+
+Go to https://github.com/crunchmail/frontend-assets to see assets structure and https://github.com/crunchmail/frontend-directives for directives structure.
+
+The folder ```internal_components``` is only for Toothpaste.
+
+    /src
+        /app
+            /external-js
+            /config
+            /docs
+            /init_module_files
+            /internal_components
+                /_directives
+                /_factory
+                /editeur
+                /importHtml
+                /lang
+                /tpl_store
+                /wysiwyg
+        /assets
+            /less
+        /components
+            /frontend-directives
+            /frontend-assets
+        /iframe_integration
+        /static
+
+After Munch installation (see https://crunchmail.github.io/munch-core/dev/), you can modify ```local-constant.js``` and change the apiUrl property.
+
+## Folders detail
+
+### `/editeur`
+Include :
+
+* Update/create template
+* Update/create colors sets
+* Update style
+* Create/delete duplication of block, container or element.
+* HTML generation to send
+
+### `importHtml`
+Include :
+
+* HTML import, visualization and modification
+
+### `tpl_store`
+Include :
+
+* Listing public models
+* Listing private models
+
+### `_directives`
+Include :
+
+* Load a new colors set
+* Load a new style
+
+### `_factory`
+Include :
+
+* An action stack
+* Add a image to the API
+
+### `wysiwyg`
+Include :
+
+* Text modification of an element
+* Styles modification of an element
+* Addition of a link
+* Addition of a image
+* Style edition of a block or container

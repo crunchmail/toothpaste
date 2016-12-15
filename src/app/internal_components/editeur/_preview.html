@@ -1,0 +1,8 @@
+<div class="btns btnsPreview">
+    <button ng-click="changeSupport($event, 'size-mobile')" class="icon-phone-iphone btn icon-alone classic-btn"></button>
+    <button ng-click="changeSupport($event, 'size-tablet')" class="icon-tablet-mac btn icon-alone classic-btn"></button>
+    <button ng-click="changeSupport($event, 'size-desktop')" class="icon-tv btn icon-alone classic-btn disabled-btn"></button>
+</div>
+<div class="containerIframe previewSupport" ng-class="support">
+    <iframe cm-iframe-preview="iframeHtml" frameborder="0" height="650"></iframe>
+</div>

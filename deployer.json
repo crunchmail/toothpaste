@@ -1,0 +1,12 @@
+{
+    "auth_config": "crunchmail.json",
+    "root": {
+        "prod": "cdn/prod",
+        "staging": "cdn/staging"
+    },
+    "container": "static",
+    "folder": {
+        "prod": "toothpaste",
+        "staging": "toothpaste-staging"
+    }
+}

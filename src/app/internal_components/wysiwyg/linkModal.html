@@ -1,0 +1,19 @@
+<form ng-submit="createLink()" class="linkModal">
+    <div class="form-group">
+        <select ng-change="changeMe()" ng-model="selectLink">
+            <option value="url" translate>URL</option>
+            <option value="address" translate>Email address</option>
+        </select>
+    </div>
+    <div class="contentModal">
+        <div ng-if="showForm === 'url'" class="form-group">
+            <label translate>URL</label>
+            <input ng-model="form.href" type="url">
+        </div>
+        <div ng-if="showForm === 'address'" class="form-group">
+            <label translate>Address</label>
+            <input ng-model="form.mail" type="mail">
+        </div>
+    </div>
+    <button translate class="btn small-btn btnModal classic-btn" type="submit">OK</button>
+</form>

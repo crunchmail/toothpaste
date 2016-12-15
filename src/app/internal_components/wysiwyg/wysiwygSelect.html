@@ -1,0 +1,5 @@
+<label>{{el.name}}</label>
+<div class="customSelect">
+    <select class="form-{{el.name}}" ng-model="fontFamilyModel" ng-options="item.value as item.name for item in fontFamily" ng-change="changeFF()"></select>
+    <div class="customSelectDiv">{{fontFamilyModel}}</div>
+</div>

@@ -1,0 +1,47 @@
+{
+    "configFile": "./src/app/config/",
+    "dist": "dist/",
+    "cdn": "cdn/",
+    "frontendDirectives": "src/components/frontend-directives/",
+    "frontendAssets": "src/components/frontend-assets/",
+    "internalComponents": "src/app/internal_components/",
+    "extLibsCss": [
+        "src/components/codemirror/lib/codemirror.css",
+        "node_modules/normalize.css/normalize.css",
+        "node_modules/angular-resizable/angular-resizable.min.css",
+        "src/components/angularjs-color-picker/dist/angularjs-color-picker.min.css",
+        "src/components/toothpick/toothpick.min.css",
+        "src/components/angular-spinkit/build/angular-spinkit.min.css",
+        "src/components/toothpick/toothpick.global.css"
+    ],
+    "intLibsCss": [
+        "src/components/toothpick/css/toothpick.global.css",
+        "src/components/toothpick/dist/toothpick.commons.css",
+        "src/components/toothpick/dist/toothpick.rwd.css",
+        "src/components/toothpick/dist/toothpick.commons.less",
+        "src/assets/less/toothpick.basic-colors.less"
+    ],
+    "extLibsJs": [
+        "src/components/codemirror/lib/codemirror.js",
+        "src/components/codemirror/mode/css/css.js",
+        "src/components/codemirror/mode/xml/xml.js",
+        "src/components/codemirror/mode/javascript/javascript.js",
+        "src/components/codemirror/mode/htmlmixed/htmlmixed.js",
+        "src/components/tinycolor/tinycolor.js",
+        "src/components/color-thief/dist/color-thief.min.js",
+        "src/app/external-js/cssjson.js",
+        "src/app/external-js/html2canvas.min.js",
+        "node_modules/less/dist/less.min.js"
+    ],
+    "docs": {
+        "install": "src/app/docs/install/*.ngdoc",
+        "api": "src/app/docs/api/*.ngdoc"
+    },
+    "lessFiles": "src/assets/less/",
+    "browserifyPath": "src/app/app.js",
+    "jsFiles": [
+        "src/*.js",
+        "src/**/*.js"
+    ],
+    "e2e": "./tests/e2e/"
+}

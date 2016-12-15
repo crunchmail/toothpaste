@@ -1,0 +1,47 @@
+<div class="form-wysiwyg">
+    <cm-wysiwyg-color-picker bg-color-model="footerBgColor" change-fct="changeBgColor($event, color)" text="textBgColor"></cm-wysiwyg-color-picker>
+</div>
+<div class="form-wysiwyg">
+    <cm-wysiwyg-color-picker bg-color-model="footerLinkColor" change-fct="changeTextLinkColor($event, color)" text="textLinkColor"></cm-wysiwyg-color-picker>
+</div>
+<div class="form-wysiwyg">
+    <cm-wysiwyg-color-picker bg-color-model="footerColor" change-fct="changeTextColor($event, color)" text="textColor"></cm-wysiwyg-color-picker>
+</div>
+<div class="form-wysiwyg" ng-if="!$root.footer.reverseFooter">
+    <label for="linkTextFooter" translate>Link Text</label>
+    <textarea id="linkTextFooter" cols="30" rows="2" ng-model="$root.footer.footerLinkText">{{$root.footerLinkText}}</textarea>
+</div>
+<div class="form-wysiwyg" ng-if="$root.footer.reverseFooter">
+    <label for="textFooter" translate>Text</label>
+    <textarea id="textFooter" cols="30" rows="2" ng-model="$root.footer.footerText">{{$root.footerText}}</textarea>
+</div>
+<button class="btn reverse-btn x-small-btn icon-import-export" ng-click="$root.footer.reverseFooter = !$root.footer.reverseFooter"></button>
+<div class="form-wysiwyg" ng-if="!$root.footer.reverseFooter">
+    <label for="textFooter" translate>Text</label>
+    <textarea id="textFooter" cols="30" rows="2" ng-model="$root.footer.footerText">{{$root.footerText}}</textarea>
+</div>
+<div class="form-wysiwyg" ng-if="$root.footer.reverseFooter">
+    <label for="linkTextFooter" translate>Link Text</label>
+    <textarea id="linkTextFooter" cols="30" rows="2" ng-model="$root.footer.footerLinkText">{{$root.footerLinkText}}</textarea>
+</div>
+<button class="advancedFooter" translate ng-click="advancedFooter = !advancedFooter">Advanced options</button>
+<div ng-show="advancedFooter">
+    <div class="form-wysiwyg-button">
+        <button ng-click="addCustomLink()" class="icon-add-circle-outline ghost-btn add-link-footer">Add link</button>
+        <div class="linkForm_footer" ng-repeat="form in $root.footer.footerLinkCustomHtml">
+            <button ng-click="$root.footer.footerLinkCustomHtml.splice($index, 1)" class="icon-remove-circle x-small-btn btn icon-alone delete_btn"></button>
+            <cm-wysiwyg-link callback="addCustomFooterLink(html, idx)" el="form" init-text="textForm(form)" init-link="linkForm(form)"></cm-wysiwyg-link>
+        </div>
+    </div>
+    <div class="form-wysiwyg logoCheckbox">
+        <input id="footerLogo" type="checkbox" ng-model="$root.footer.footerLogo" /><label for="footerLogo" translate>Add logo</label>
+    </div>
+    <div class="form-wysiwyg">
+        <label for="footerExplanation" translate>Explanations on the message's origin</label>
+        <textarea id="footerExplanation" cols="30" rows="2" ng-model="$root.footer.footerExplanation">{{$root.footer.footerExplanation}}</textarea>
+    </div>
+    <div class="form-wysiwyg">
+        <label for="footerAddress" translate>Postal Address</label>
+        <textarea id="footerAddress" cols="30" rows="2" ng-model="$root.footer.footerAddress">{{$root.footer.footerAddress}}</textarea>
+    </div>
+</div>

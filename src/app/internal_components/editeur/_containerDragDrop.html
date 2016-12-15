@@ -1,0 +1,31 @@
+<div class="container-drag-control" ng-class="{'is-open' : activateMenu}">
+    <button ng-class="{'container-drag-menu-close' : activateMenu}" class="btn x-small-btn container-drag-menu icon-menu classic-btn" ng-click="openMenu()"></button>
+    <div ng-include="'containers.html'"></div>
+</div>
+
+<script type="text/ng-template" id="containers.html">
+    <ul dnd-list="obj"
+        dnd-drop="dropCallback(event, index, item, external, type)"
+        class="ul-reset list-element">
+        <li ng-repeat="container in obj"
+        dnd-disable-if="container.type === 'placeholder' || !container.draggable || container.draggable === undefined || container.draggable === '' || container.draggable === null"
+        class="list-type-{{container.type}}"
+        dnd-draggable="container"
+        dnd-effect-allowed="move"
+        dnd-moved="obj.splice($index, 1)"
+        dnd-selected="models.selected = copyBlock"
+        ng-mouseover="addHighlightContainer(container)"
+        ng-mouseleave="removeHighlightContainer(container)"
+        ng-hide="$index === 0 && !$root.header.showHeader">
+            <div ng-if="$index === 0">
+                <span>Header</span>
+            </div>
+            <div style="background-color: {{container.name}};" ng-if="$index > 0 && $index < obj.length - 1">
+                <span>{{container.name}}</span>
+            </div>
+            <div ng-if="$index === obj.length - 1">
+                <span>Footer</span>
+            </div>
+        </li>
+    </ul>
+</script>
