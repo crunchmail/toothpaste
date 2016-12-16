@@ -1,0 +1,61 @@
+<h1><code ng:non-bindable="">cmUploadImg</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">wysiwyg</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="wysiwyg-directive-page wysiwyg-directive-cmuploadimg-page"><p>Upload a image and modify image properties</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$log">$log</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$timeout">$timeout</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/_factory.factory:uploadStore">uploadStore</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/wysiwyg.factory:wysService">wysService</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/Lodash">Lodash</a></code>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;cm-upload-img
+       el="{Node}"
+       parent-el="{Node}"&gt;
+&lt;/cm-upload-img&gt;</pre>
+<h3 id="usage_directive-info">Directive info</h3>
+<div class="directive-info"><ul><li>This directive creates new scope.</li>
+</ul>
+</div>
+<h4 id="usage_directive-info_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>el</td><td><a href="" class="label type-hint type-hint-node">Node</a></td><td><div class="wysiwyg-directive-page wysiwyg-directive-cmuploadimg-page"><p>Passing element to modify</p>
+</div></td></tr><tr><td>parentEl</td><td><a href="" class="label type-hint type-hint-node">Node</a></td><td><div class="wysiwyg-directive-page wysiwyg-directive-cmuploadimg-page"><p>Passing parent element to modify</p>
+</div></td></tr></tbody></table></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_addaltimage">addAltImage()</h3>
+<div class="addaltimage"><div class="addaltimage-page"><p>Add a description alt on image</p>
+</div></div>
+</li>
+<li><h3 id="methods_addlinkimage">addLinkImage()</h3>
+<div class="addlinkimage"><div class="addlinkimage-page"><p>Add a link on image</p>
+</div></div>
+</li>
+<li><h3 id="methods_changesizeimage">changeSizeImage()</h3>
+<div class="changesizeimage"><div class="changesizeimage-page"><p>Change the image width</p>
+</div></div>
+</li>
+<li><h3 id="methods_removealtattr">removeAltAttr()</h3>
+<div class="removealtattr"><div class="removealtattr-page"><p>Remove description alt on image</p>
+</div></div>
+</li>
+<li><h3 id="methods_removelinkattr">removeLinkAttr()</h3>
+<div class="removelinkattr"><div class="removelinkattr-page"><p>Remove link image</p>
+</div></div>
+</li>
+<li><h3 id="methods_uploadimg">uploadImg(file)</h3>
+<div class="uploadimg"><div class="uploadimg-page"><p>Post an image to API</p>
+</div><h5 id="methods_uploadimg_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>file</td><td><a href="" class="label type-hint type-hint-file">File</a></td><td><div class="uploadimg-page"><p>input file value</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>

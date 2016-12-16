@@ -1,0 +1,82 @@
+<h1><code ng:non-bindable=""></code>
+<div><span class="hint"></span>
+</div>
+</h1>
+<div><div class="docs-top-page"><h2 id="api-documentation" id="api-documentation">API documentation</h2>
+<p>Toothpaste is an editor which allow you to compose an email template. There are several possibilities to create a template, with a basic model, by starting from scratch or by directly import html.</p>
+<p>Email creation is separated in 3 parts, blocks addition, colors sets modification and style modification.</p>
+<h3 id="vocabulary" id="api-documentation_vocabulary">Vocabulary</h3>
+<ul>
+<li><strong>Container</strong> : HTML structure containing one or several empty columns</li>
+<li><strong>Block</strong> : HTML structure containing one or several columns with elements</li>
+<li><strong>Elements</strong> : Basic HTML elements (Title, button, image...)</li>
+</ul>
+<h3 id="structure" id="api-documentation_structure">Structure</h3>
+<p>This application is separated in several modules. Every modules is an application feature.</p>
+<p>Go to <a href="https://github.com/crunchmail/frontend-assets">https://github.com/crunchmail/frontend-assets</a> to see assets structure and <a href="https://github.com/crunchmail/frontend-directives">https://github.com/crunchmail/frontend-directives</a> for directives structure.</p>
+<p>The folder <code>internal_components</code> is only for Toothpaste.</p>
+<pre><code>/src
+    /app
+        /external-js
+        /config
+        /docs
+        /init_module_files
+        /internal_components
+            /_directives
+            /_factory
+            /editeur
+            /importHtml
+            /lang
+            /tpl_store
+            /wysiwyg
+    /assets
+        /less
+    /components
+        /frontend-directives
+        /frontend-assets
+    /iframe_integration
+    /static
+</code></pre><p>After Munch installation (see <a href="https://crunchmail.github.io/munch-core/dev/">https://crunchmail.github.io/munch-core/dev/</a>), you can modify <code>local-constant.js</code> and change the apiUrl property.</p>
+<h3 id="folders-detail" id="api-documentation_folders-detail">Folders detail</h3>
+<h4 id="-editeur-" id="api-documentation_folders-detail"><code>/editeur</code></h4>
+<p>Include :</p>
+<ul>
+<li>Update/create template</li>
+<li>Update/create colors sets</li>
+<li>Update style</li>
+<li>Create/delete duplication of block, container or element.</li>
+<li>HTML generation to send</li>
+</ul>
+<h4 id="-importhtml-" id="api-documentation_folders-detail"><code>importHtml</code></h4>
+<p>Include :</p>
+<ul>
+<li>HTML import, visualization and modification</li>
+</ul>
+<h4 id="-tpl_store-" id="api-documentation_folders-detail"><code>tpl_store</code></h4>
+<p>Include :</p>
+<ul>
+<li>Listing public models</li>
+<li>Listing private models</li>
+</ul>
+<h4 id="-_directives-" id="api-documentation_folders-detail"><code>_directives</code></h4>
+<p>Include :</p>
+<ul>
+<li>Load a new colors set</li>
+<li>Load a new style</li>
+</ul>
+<h4 id="-_factory-" id="api-documentation_folders-detail"><code>_factory</code></h4>
+<p>Include :</p>
+<ul>
+<li>An action stack</li>
+<li>Add a image to the API</li>
+</ul>
+<h4 id="-wysiwyg-" id="api-documentation_folders-detail"><code>wysiwyg</code></h4>
+<p>Include :</p>
+<ul>
+<li>Text modification of an element</li>
+<li>Styles modification of an element</li>
+<li>Addition of a link</li>
+<li>Addition of a image</li>
+<li>Style edition of a block or container</li>
+</ul>
+</div></div>

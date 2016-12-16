@@ -1,0 +1,198 @@
+<h1><code ng:non-bindable="">cmAppEditeur</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">editeur</code>
+</span>
+</div>
+</h1>
+<div><h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$routeParams">$routeParams</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$timeout">$timeout</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$rootScope">$rootScope</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$location">$location</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$document">$document</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$log">$log</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$q">$q</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/_factory.factory:globalFunction">globalFunction</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/_factory.factory:base64">base64</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/_factory.factory:actionStack">actionStack</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/_factory.factory:postMessageHandler">postMessageHandler</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/_factory.factory:cmNotify">cmNotify</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/editeur.factory:editeurService">editeurService</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/editeur.factory:blockFactory">blockFactory</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/editeur.factory:editStyleSetFactory">editStyleSetFactory</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/tpl_store.factory:apiTplStore">apiTplStore</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/http://likeastore.github.io/ngDialog">ngDialog</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/message.factory:apiMessage">apiMessage</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/wysiwyg.factory:wysService">wysService</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/appSettings">appSettings</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/Lodash">Lodash</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/gettextCatalog">gettextCatalog</a></code>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;cm-app-editeur&gt;
+&lt;/cm-app-editeur&gt;</pre>
+</div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_autocreate">autoCreate(vm)</h3>
+<div class="autocreate"><div class="autocreate-page"><p>Auto create document if it&#39;s a template</p>
+</div><h5 id="methods_autocreate_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>vm</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="autocreate-page"><p>passing controller with documentModel</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_changecolor">changeColor(e, color, key)</h3>
+<div class="changecolor"><div class="changecolor-page"><p>ng-change on colorpicker colorSet and set the color into less style of document</p>
+</div><h5 id="methods_changecolor_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="changecolor-page"><p>event DOM</p>
+</div></td></tr><tr><td>color</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="changecolor-page"><p>array with colors</p>
+</div></td></tr><tr><td>key</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="changecolor-page"><p>key of object ex: secondary_color1</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_checkifcolorsetisdirty">checkIfColorSetIsDirty(callback)</h3>
+<div class="checkifcolorsetisdirty"><div class="checkifcolorsetisdirty-page"><p>Show a ng-dialog if color</p>
+</div><h5 id="methods_checkifcolorsetisdirty_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>callback</td><td><a href="" class="label type-hint type-hint-function">Function</a></td><td><div class="checkifcolorsetisdirty-page"><p>callback function</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_createdoc">createDoc()</h3>
+<div class="createdoc"><div class="createdoc-page"><p>Create a document</p>
+</div></div>
+</li>
+<li><h3 id="methods_createprivtpl">createPrivTpl()</h3>
+<div class="createprivtpl"><div class="createprivtpl-page"><p>Create a private template</p>
+</div></div>
+</li>
+<li><h3 id="methods_deleteelement">deleteElement(item, sourceArray, isDropEvent)</h3>
+<div class="deleteelement"><div class="deleteelement-page"><p>Delete a element</p>
+</div><h5 id="methods_deleteelement_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>item</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="deleteelement-page"><p>The object to delete</p>
+</div></td></tr><tr><td>sourceArray</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="deleteelement-page"><p>The template array with all objects</p>
+</div></td></tr><tr><td>isDropEvent</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="deleteelement-page"><p>Check if it&#39;s a drop event</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_dragcallback">dragCallback(e)</h3>
+<div class="dragcallback"><div class="dragcallback-page"><p>Callback on start to drag a element
+We check if element is empty or not</p>
+</div><h5 id="methods_dragcallback_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="dragcallback-page"><p>DOM event</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_dragcallback">dragCallback(event, index, item)</h3>
+<div class="dragcallback"><div class="dragcallback-page"><p>Callback after begin to drag a element
+We remove contenteditable attribute</p>
+</div><h5 id="methods_dragcallback_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>event</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="dragcallback-page"><p>DOM event</p>
+</div></td></tr><tr><td>index</td><td><a href="" class="label type-hint type-hint-number">Number</a></td><td><div class="dragcallback-page"><p>Array index</p>
+</div></td></tr><tr><td>item</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="dragcallback-page"><p>Item object</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_dropcallback">dropCallback(e, index, item, external, type)</h3>
+<div class="dropcallback"><div class="dropcallback-page"><p>Callback after move a element/block/container</p>
+</div><h5 id="methods_dropcallback_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="dropcallback-page"><p>DOM event</p>
+</div></td></tr><tr><td>index</td><td><a href="" class="label type-hint type-hint-number">Number</a></td><td><div class="dropcallback-page"><p>Array index</p>
+</div></td></tr><tr><td>item</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="dropcallback-page"><p>The object element/container/block</p>
+</div></td></tr><tr><td>external</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="dropcallback-page"><p>Whether the element was dragged from an external source</p>
+</div></td></tr><tr><td>type</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="dropcallback-page"><p>element type</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_duplicate">duplicate(item, sourceArray, idx)</h3>
+<div class="duplicate"><div class="duplicate-page"><p>Duplicate a block</p>
+</div><h5 id="methods_duplicate_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>item</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="duplicate-page"><p>The object to duplicate</p>
+</div></td></tr><tr><td>sourceArray</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="duplicate-page"><p>The template array with all objects</p>
+</div></td></tr><tr><td>idx</td><td><a href="" class="label type-hint type-hint-number">Number</a></td><td><div class="duplicate-page"><p>The index array</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_hidewystoolbar">hideWysToolbar()</h3>
+<div class="hidewystoolbar"><div class="hidewystoolbar-page"><p>Hide wysiwyg toolbar</p>
+</div></div>
+</li>
+<li><h3 id="methods_initdoc">initDoc(data)</h3>
+<div class="initdoc"><div class="initdoc-page"><p>Initialization document</p>
+</div><h5 id="methods_initdoc_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>data</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="initdoc-page"><p>all document data</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_inserteditem">insertedItem(event, item)</h3>
+<div class="inserteditem"><div class="inserteditem-page"><p>Set some attributes on our element, a widthTable and divPadding, use in html generation for outlook</p>
+</div><h5 id="methods_inserteditem_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>event</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="inserteditem-page"><p>DOM event</p>
+</div></td></tr><tr><td>item</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="inserteditem-page"><p>Item object</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_loadcolorandstyle">loadColorAndStyle(color_url, style_url)</h3>
+<div class="loadcolorandstyle"><div class="loadcolorandstyle-page"><p>Load colorSet and styleSet</p>
+</div><h5 id="methods_loadcolorandstyle_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>color_url</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="loadcolorandstyle-page"><p>color_set document</p>
+</div></td></tr><tr><td>style_url</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="loadcolorandstyle-page"><p>style_set document</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_matchcoloranddesc">matchColorAndDesc(colors, styleSetUrl)</h3>
+<div class="matchcoloranddesc"><div class="matchcoloranddesc-page"><p>Get style set description and apply to colors set</p>
+</div><h5 id="methods_matchcoloranddesc_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>colors</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="matchcoloranddesc-page"><p>document color_set_content</p>
+</div></td></tr><tr><td>styleSetUrl</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="matchcoloranddesc-page"><p>document style_set</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_previewhtml">previewHTML()</h3>
+<div class="previewhtml"><div class="previewhtml-page"><p>Open a dialog to display the template</p>
+</div></div>
+</li>
+<li><h3 id="methods_removestylingelements">removeStylingElements()</h3>
+<div class="removestylingelements"><div class="removestylingelements-page"><p>remove all style attributes on button element</p>
+</div></div>
+</li>
+<li><h3 id="methods_responseprivtpl">responsePrivTpl(url, updating)</h3>
+<div class="responseprivtpl"><div class="responseprivtpl-page"><p>Response creation and udpate private tpl</p>
+</div><h5 id="methods_responseprivtpl_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>url</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="responseprivtpl-page"><p>url document</p>
+</div></td></tr><tr><td>updating</td><td><a href="" class="label type-hint type-hint-bool">Bool</a></td><td><div class="responseprivtpl-page"><p>if update or create to set the correct user message</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_returncolorobj">returnColorObj(colorSet)</h3>
+<div class="returncolorobj"><div class="returncolorobj-page"><p>transform application colorset to original format</p>
+</div><h5 id="methods_returncolorobj_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>colorSet</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="returncolorobj-page"><p>document color_set</p>
+</div></td></tr></tbody></table><h5 id="methods_returncolorobj_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="returncolorobj-page"><p>Original format color</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_saveblock">saveBlock(item)</h3>
+<div class="saveblock"><div class="saveblock-page"><p>Save a new block (Commented in template)</p>
+</div><h5 id="methods_saveblock_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>item</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="saveblock-page"><p>The object to save</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_saveorupdatedraft">saveOrUpdateDraft(close)</h3>
+<div class="saveorupdatedraft"><div class="saveorupdatedraft-page"><p>Create/Update document draft</p>
+</div><h5 id="methods_saveorupdatedraft_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>close</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="saveorupdatedraft-page"><p>boolean to close or not Toothpaste</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_showcolorpicker">showColorPicker(e, item)</h3>
+<div class="showcolorpicker"><div class="showcolorpicker-page"><p>Show color picker</p>
+</div><h5 id="methods_showcolorpicker_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="showcolorpicker-page"><p>event DOM</p>
+</div></td></tr><tr><td>item</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="showcolorpicker-page"><p>array with colors</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_udpateprivtpl">udpatePrivTpl()</h3>
+<div class="udpateprivtpl"><div class="udpateprivtpl-page"><p>Update a private template</p>
+</div></div>
+</li>
+<li><h3 id="methods_undo">undo()</h3>
+<div class="undo"><div class="undo-page"><p>Undo a action</p>
+</div></div>
+</li>
+<li><h3 id="methods_updatemessage">updateMessage(close, callback)</h3>
+<div class="updatemessage"><div class="updatemessage-page"><p>Update message</p>
+</div><h5 id="methods_updatemessage_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>close</td><td><a href="" class="label type-hint type-hint-bool">Bool</a></td><td><div class="updatemessage-page"><p>can close Toothpaste</p>
+</div></td></tr><tr><td>callback</td><td><a href="" class="label type-hint type-hint-function">Function</a></td><td><div class="updatemessage-page"><p>callback function</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>

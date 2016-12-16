@@ -1,0 +1,109 @@
+<h1><code ng:non-bindable="">cmWysiwyg</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">wysiwyg</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="wysiwyg-directive-page wysiwyg-directive-cmwysiwyg-page"><p>Upload a image on drop event</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$timeout">$timeout</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$compile">$compile</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$log">$log</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://docs.angularjs.org/api/ng/service/$window">$window</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/wysiwyg.factory:wysService">wysService</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/_factory.factory:globalFunction">globalFunction</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/gettextCatalog">gettextCatalog</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/Lodash">Lodash</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/https://github.com/likeastore/ngDialog">ngDialog</a></code>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;cm-wysiwyg&gt;
+&lt;/cm-wysiwyg&gt;</pre>
+</div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_actionbutton">actionButton(e, el)</h3>
+<div class="actionbutton"><div class="actionbutton-page"><p>Action on wysiwyg button</p>
+</div><h5 id="methods_actionbutton_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="actionbutton-page"><p>Passing DOM event</p>
+</div></td></tr><tr><td>el</td><td><a href="" class="label type-hint type-hint-node">Node</a></td><td><div class="actionbutton-page"><p>DOM element</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_applytojsonelement">applyToJsonElement(html)</h3>
+<div class="applytojsonelement"><div class="applytojsonelement-page"><p>Apply modification on element</p>
+</div><h5 id="methods_applytojsonelement_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>html</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="applytojsonelement-page"><p>Passing html</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_applyvalue">applyValue()</h3>
+<div class="applyvalue"><div class="applyvalue-page"><p>Apply value Form like font size</p>
+</div></div>
+</li>
+<li><h3 id="methods_attacheventel">attachEventEl(el)</h3>
+<div class="attacheventel"><div class="attacheventel-page"><p>Attach event on element</p>
+</div><h5 id="methods_attacheventel_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>el</td><td><a href="" class="label type-hint type-hint-node">Node</a></td><td><div class="attacheventel-page"><p>The element</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_blurevent">blurEvent(e)</h3>
+<div class="blurevent"><div class="blurevent-page"><p>On blur event apply html on json element</p>
+</div><h5 id="methods_blurevent_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="blurevent-page"><p>Passing DOM event</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_createbuttons">createButtons()</h3>
+<div class="createbuttons"><div class="createbuttons-page"><p>Init wysiwyg buttons</p>
+</div></div>
+</li>
+<li><h3 id="methods_detacheventel">detachEventEl(el)</h3>
+<div class="detacheventel"><div class="detacheventel-page"><p>Detach event on element</p>
+</div><h5 id="methods_detacheventel_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>el</td><td><a href="" class="label type-hint type-hint-node">Node</a></td><td><div class="detacheventel-page"><p>The element</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_getelement">getElement()</h3>
+<div class="getelement"><div class="getelement-page"><p>Return element</p>
+</div></div>
+</li>
+<li><h3 id="methods_getitem">getItem()</h3>
+<div class="getitem"><div class="getitem-page"><p>return the item</p>
+</div></div>
+</li>
+<li><h3 id="methods_keydownevent">keydownEvent(e)</h3>
+<div class="keydownevent"><div class="keydownevent-page"><p>Catch Enter key press to insert br instead of tag</p>
+</div><h5 id="methods_keydownevent_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="keydownevent-page"><p>Passing DOM event</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_mousedownevent">mouseDownEvent(e)</h3>
+<div class="mousedownevent"><div class="mousedownevent-page"><p>On mouse down, attach event on element, init button config</p>
+</div><h5 id="methods_mousedownevent_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="mousedownevent-page"><p>Passing DOM event</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_mouseupevent">mouseUpEvent(e)</h3>
+<div class="mouseupevent"><div class="mouseupevent-page"><p>On mouse up event, Save text content and close all Dialog</p>
+</div><h5 id="methods_mouseupevent_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="mouseupevent-page"><p>Passing DOM event</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_pasteevent">pasteEvent(e)</h3>
+<div class="pasteevent"><div class="pasteevent-page"><p>Catch paste event to insert correct html</p>
+</div><h5 id="methods_pasteevent_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>e</td><td><a href="" class="label type-hint type-hint-event">Event</a></td><td><div class="pasteevent-page"><p>Passing DOM event</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_removewys">removeWys()</h3>
+<div class="removewys"><div class="removewys-page"><p>Remove wysiwyg toolbars</p>
+</div></div>
+</li>
+</ul>
+</div>
+<div class="member property"><h2 id="properties">Properties</h2>
+<ul class="properties"><li><h3 id="properties_tooltip">tooltip</h3>
+<div class="tooltip"><div class="tooltip-page"><p>Help tooltip on wysiwyg element</p>
+</div></div>
+</li>
+</ul>
+</div>
+</div>
