@@ -32,3 +32,8 @@ gulp.task('docs', function () {
     }).pipe(plugins.ngdocs.process(options))
     .pipe(gulp.dest('./docs'));
 });
+
+gulp.task('deploy', ['docs'], function() {
+  return gulp.src('./docs/**/*')
+    .pipe(plugins.ghPages());
+});

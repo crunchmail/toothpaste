@@ -25,4 +25,10 @@ All gulp tasks are specify on ```gulp-tasks``` folder. Paths declared in gulp ta
 
 ## Documentation
 
-After building, go to [http://localhost:4002](http://localhost:4002) to reach all documentation
+Go to https://crunchmail.github.io/toothpaste/
+
+## Gulp commands
+
+    gulp deploy
+
+Build documentation and deploy documentation on the gh-pages branch

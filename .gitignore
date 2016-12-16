@@ -3,6 +3,7 @@ cdn
 node_modules
 src/components
 integration
+.publish
 /docs
 src/app/config/constant.js
 src/app/config/munch-constant.js
