@@ -88,3 +88,41 @@ Include :
 * Addition of a link
 * Addition of a image
 * Style edition of a block or container
+
+### Config File
+
+In `src/app/config/`
+
+```javascript
+var appSettings = {
+    // Api Settings
+    apiUrl : 'http://127.0.0.1.8000/',
+    version: 'v1',
+    //Use for postMessage
+    source: "Toothpaste",
+    apiKey: "",
+    pubTemplates: [],
+    privTemplates: [],
+    nameTemp: "debugName",
+    debug: true,
+    urlMessage: "",
+    raven: {
+        dsn: ''
+    },
+    lang: {
+        default: 'fr',
+        // allow to see missing translations
+        debug: true,
+        // default is "[MISSING]:"
+        debugPrefix: '¬ '
+    },
+    //Replace in gulp task
+    config: {
+        release: 'VERSION',
+        tags: {
+            git_commit: 'COMMIT',
+            env: 'ENVIRONMENT'
+        }
+    }
+};
+```
