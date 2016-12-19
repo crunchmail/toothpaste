@@ -13,7 +13,7 @@
     "angular-mocks": "^1.4.8",
     "angular-sanitize": "^1.5.0",
     "del": "^2.2.0",
-    "frontend-directives": "git+https://github.com/crunchmail/frontend-directives#0.1.0",
+    "frontend-directives": "git+https://github.com/crunchmail/frontend-directives#0.1.2",
     "git-rev-sync": "^1.4.0",
     "gulp": "^3.8.11",
     "gulp-angular-gettext": "^2.1.0",
