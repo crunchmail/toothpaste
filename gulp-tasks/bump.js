@@ -9,7 +9,7 @@ var plugins = require('gulp-load-plugins')({
 var semver = require('semver');
 
 function bump(importance) {
-    var version = semver.inc(require('./package.json').version, importance);
+    var version = semver.inc(require('../package.json').version, importance);
 
     // get all the files to bump version in
     return gulp.src(['./package.json', './bower.json'])
