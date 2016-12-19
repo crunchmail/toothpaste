@@ -79,4 +79,38 @@
 <li>Addition of a image</li>
 <li>Style edition of a block or container</li>
 </ul>
+<h4 id="config-file" id="api-documentation_folders-detail_config-file">Config File</h4>
+<p>Dans <code>src/app/config/</code></p>
+<pre><code class="lang-javascript">var appSettings = {
+    // Api Settings
+    apiUrl : &#39;http://127.0.0.1.8000/&#39;,
+    version: &#39;v1&#39;,
+    //Use for postMessage
+    source: &quot;Toothpaste&quot;,
+    apiKey: &quot;&quot;,
+    pubTemplates: [],
+    privTemplates: [],
+    nameTemp: &quot;debugName&quot;,
+    debug: true,
+    urlMessage: &quot;&quot;,
+    raven: {
+        dsn: &#39;&#39;
+    },
+    lang: {
+        default: &#39;fr&#39;,
+        // allow to see missing translations
+        debug: true,
+        // default is &quot;[MISSING]:&quot;
+        debugPrefix: &#39;¬ &#39;
+    },
+    //Replace in gulp task
+    config: {
+        release: &#39;VERSION&#39;,
+        tags: {
+            git_commit: &#39;COMMIT&#39;,
+            env: &#39;ENVIRONMENT&#39;
+        }
+    }
+};
+</code></pre>
 </div></div>
