@@ -72,7 +72,14 @@
     window.addEventListener("message", receiveMessage, false);
 
     function receiveMessage(event) {
-        console.log(event);
+        if(event.data !== "") {
+            var response = JSON.parse(event.data);
+            if(response.source === "Toothpaste") {
+                console.log(response.content);
+            }else {
+                console.warn("not good source");
+            }
+        }
     }
 
     </script>
