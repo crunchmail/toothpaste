@@ -30,17 +30,22 @@
     <div class="container-iframe">
         <iframe id="tabiframe-app" frameborder="0"></iframe>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
     <script>
 
-    var iframe = document.getElementById('tabiframe-app');
+    var settings = {
+        "iframeId": "tabiframe-app",
+        "apiUrl": "https://api.munch/",
+        "token": ""
+    };
+
+    var iframe = document.getElementById("tabiframe-app");
     var data = {
         "identifier": "api",
         "password":"API_KEY"
     };
 
     var request = new XMLHttpRequest();
-    request.open('POST', "API_URLapi-token-auth/", true);
+    request.open('POST', settings.apiUrl + "api-token-auth/", true);
     request.setRequestHeader('Content-Type', 'application/json');
     request.setRequestHeader('Accept', 'application/json');
 
@@ -48,19 +53,10 @@
       if (request.status >= 200 && request.status < 400) {
         // Success!
         var resp = request.responseText;
-        var token = JSON.parse(resp).token;
 
-        // var jsonToSend = {
-        //     "source": "Zimlet",
-        //     "content": {
-        //         "JWT": resp.token
-        //         //"loadTpl": "http://munch.local/template-store/v1/documents/106/"
-        //     }
-        // };
-        // jsonToSend = JSON.stringify(jsonToSend);
-        // frames[0].postMessage(jsonToSend, '*');
-        iframe.src= 'http://localhost:4000/ENV/#/?apiUrl=API_URL&apiKey=SECRET&token=' + token;
-        // iframe.src= 'http://crunchmail-toothpaste.local/ENV/#/?apiUrl=API_URL&apiKey=API_KEY&token=' + token + '&urlMessage=https://staging.crunchmail.net/v1/messages/1172/';
+        settings.token = JSON.parse(resp).token;
+
+        iframe.src= 'http://localhost:4000/ENV/#!/?apiUrl=' + settings.apiUrl + '&apiKey=SECRET&token=' + settings.token;
       } else {
         // We reached our target server, but it returned an error
 
@@ -72,6 +68,12 @@
     };
 
     request.send(JSON.stringify(data));
+
+    window.addEventListener("message", receiveMessage, false);
+
+    function receiveMessage(event) {
+        console.log(event);
+    }
 
     </script>
 </body>

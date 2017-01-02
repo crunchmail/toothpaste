@@ -2,7 +2,7 @@ dist
 cdn
 node_modules
 src/components
-integration
+static_embedded
 .publish
 /docs
 src/app/config/constant.js

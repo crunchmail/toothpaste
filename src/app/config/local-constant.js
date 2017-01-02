@@ -5,7 +5,7 @@
         apiUrl : 'http://127.0.0.1.8000/',
         version: 'v1',
         source: "Toothpaste",
-        apiKey: "",
+        apiKey: "666friGftImOjwPe3wPBNntLj6hcZG",
         pubTemplates: [],
         privTemplates: [],
         nameTemp: "debugName",

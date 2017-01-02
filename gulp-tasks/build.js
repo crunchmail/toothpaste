@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var fs = require('fs');
 var plugins = require('gulp-load-plugins')({
     rename: {
         'gulp-if': 'gulpif',
@@ -18,13 +19,24 @@ var browserify = require('browserify');
 var watchify = require('watchify');
 var assign = require('lodash.assign');
 
+var gitFolder = false;
+
+fs.stat('.git/config', function(err, stat) {
+    if(err === null) {
+        gitFolder = true;
+    }
+});
+
 /**
  * Get the current version
  */
 var p = require('../package.json');
-var git = require('git-rev-sync');
+var app_commit = "";
 var app_version = p.version;
-var app_commit = git.short();
+if(gitFolder) {
+    var git = require('git-rev-sync');
+    app_commit = git.short();
+}
 
 var argv = require('yargs')
 .default('env', 'local')

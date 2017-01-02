@@ -7,6 +7,7 @@
  * @requires https://docs.angularjs.org/api/ng/service/$rootScope
  * @requires https://docs.angularjs.org/api/ng/service/$log
  * @requires https://docs.angularjs.org/api/ng/service/$location
+ * @requires _factory.factory:postMessageHandler
  * @requires _factory.factory:cmNotify
  * @requires _factory.factory:base64
  * @requires gettextCatalog
@@ -14,7 +15,7 @@
 
 (function () {
     'use strict';
-    var directive = function(apiTplStore, appSettings, $rootScope, $log, cmNotify, gettextCatalog, base64, $location) {
+    var directive = function(apiTplStore, appSettings, $rootScope, $log, cmNotify, gettextCatalog, base64, $location, postMessageHandler) {
         return {
             templateUrl:'views/tpl_store/_list_tpl.html',
             controller: function($scope) {
