@@ -51,6 +51,8 @@
             },
             require: '^cmAppEditeur',
             controller: function($scope) {
+                var parent = wysService.getParentByTagName($scope.el[0], "div");
+                $scope.maxValueRange = parent.offsetWidth;
                 $scope.formImg = {
                     "disabled": true,
                     "width": 0,
@@ -77,8 +79,6 @@
                     scope.formImg.link = "http://";
                 }
                 scope.widthImgTpl = elementImg[0].width;
-                var parent = wysService.getParentByTagName(scope.el[0], "div");
-                scope.maxValueRange = parent.offsetWidth;
 
                 /**
                  * @ngdoc function

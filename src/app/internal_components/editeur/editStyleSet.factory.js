@@ -41,16 +41,17 @@
              * @param {Object} ctrl Passing controller
              */
             applyStyleSet: function(regexp, expression, ctrl) {
-                ctrl.lessTplStyle = ctrl.lessTplStyle.replace(regexp, expression);
-
-                less.render(ctrl.lessTplStyle + ctrl.lessColor, function(e, output) {
-                    if(e === null) {
-                        $rootScope.styleTpl = output.css;
-                    }else {
-                        $log.warn("error compilation less");
-                        $log.debug(e);
-                    }
-                });
+                if(!_.isNull(ctrl.lessTplStyle)) {
+                    ctrl.lessTplStyle = ctrl.lessTplStyle.replace(regexp, expression);
+                    less.render(ctrl.lessTplStyle + ctrl.lessColor, function(e, output) {
+                        if(e === null) {
+                            $rootScope.styleTpl = output.css;
+                        }else {
+                            $log.warn("error compilation less");
+                            $log.debug(e);
+                        }
+                    });
+                }
             },
             /**
              * @ngdoc function

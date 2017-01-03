@@ -9,7 +9,7 @@
 (function () {
     'use strict';
 
-    var directive = function($timeout) {
+    var directive = function($timeout, $log) {
         return {
             restrict: "A",
             link: function(scope, element, attrs, main) {
