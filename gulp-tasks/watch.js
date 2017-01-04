@@ -32,6 +32,10 @@ gulp.task('watch', function() {
             paths.FrontendAssets + 'less/*.less'
         ], ['assets']);
 
+        gulp.watch([
+            'src/iframe_integration/*'
+        ], ['generate_iframe']);
+
        //Watchers for translate files
        gulp.watch('src/app/commons/languages/*', ['translateFiles']);
    }

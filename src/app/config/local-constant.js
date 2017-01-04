@@ -2,10 +2,10 @@
     'use strict';
 
     var appSettings = {
-        apiUrl : 'http://127.0.0.1.8000/',
+        apiUrl : 'https://api.munch/',
         version: 'v1',
         source: "Toothpaste",
-        apiKey: "",
+        apiKey: "666friGftImOjwPe3wPBNntLj6hcZG",
         pubTemplates: [],
         privTemplates: [],
         nameTemp: "debugName",

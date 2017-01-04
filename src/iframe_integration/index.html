@@ -16,6 +16,7 @@
         /*48*/
         overflow: hidden;
     }
+
     iframe {
         width: 100%;
         height: 100%;
@@ -24,55 +25,24 @@
         background: #999;
     }
     </style>
+    <script src="toothpaste/embedded/toothpaste_bootstrap.js"></script>
+
 </head>
 
 <body>
     <div class="container-iframe">
+        <button id="showEditor">Show editeur</button>
         <iframe id="tabiframe-app" frameborder="0"></iframe>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
     <script>
 
-    var iframe = document.getElementById('tabiframe-app');
-    var data = {
-        "identifier": "api",
-        "password":"API_KEY"
+    var settings = {
+        "iframeId": "tabiframe-app",
+        "apiUrl": "https://api.munch/",
+        "token": ""
     };
 
-    var request = new XMLHttpRequest();
-    request.open('POST', "API_URLapi-token-auth/", true);
-    request.setRequestHeader('Content-Type', 'application/json');
-    request.setRequestHeader('Accept', 'application/json');
-
-    request.onload = function() {
-      if (request.status >= 200 && request.status < 400) {
-        // Success!
-        var resp = request.responseText;
-        var token = JSON.parse(resp).token;
-
-        // var jsonToSend = {
-        //     "source": "Zimlet",
-        //     "content": {
-        //         "JWT": resp.token
-        //         //"loadTpl": "http://munch.local/template-store/v1/documents/106/"
-        //     }
-        // };
-        // jsonToSend = JSON.stringify(jsonToSend);
-        // frames[0].postMessage(jsonToSend, '*');
-        iframe.src= 'http://localhost:4000/ENV/#/?apiUrl=API_URL&apiKey=SECRET&token=' + token;
-        // iframe.src= 'http://crunchmail-toothpaste.local/ENV/#/?apiUrl=API_URL&apiKey=API_KEY&token=' + token + '&urlMessage=https://staging.crunchmail.net/v1/messages/1172/';
-      } else {
-        // We reached our target server, but it returned an error
-
-      }
-    };
-
-    request.onerror = function() {
-      // There was a connection error of some sort
-    };
-
-    request.send(JSON.stringify(data));
-
+    bootstrapToothpaste.init(settings);
     </script>
 </body>
 </html>

@@ -12,6 +12,7 @@
         $rootScope.listPrivTpls = [];
 
         var searchObj = $location.search();
+        $log.debug("searchObj");
         $log.debug(searchObj);
         if(!_.isEmpty(searchObj)) {
             _.forOwn(searchObj, function(v, k) {
