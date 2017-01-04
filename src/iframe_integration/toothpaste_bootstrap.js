@@ -6,7 +6,8 @@ var bootstrapToothpaste = (function () {
     var settings = {
         "iframeId": "",
         "apiUrl": "http://127.0.0.1.8000/",
-        "token": ""
+        "token": "",
+        "idMessage": ""
     };
 
     /**
@@ -72,8 +73,11 @@ var bootstrapToothpaste = (function () {
         });
 
         var iframe = document.getElementById(settings.iframeId);
-
-        iframe.src = bootstrapRoot + "../#/?apiUrl=" + settings.apiUrl + "&token=" + settings.token;
+        var urlIframe = bootstrapRoot + "../#/?r=" + (new Date()).getTime() + "&apiUrl=" + settings.apiUrl + "&token=" + settings.token;
+        if(settings.idMessage !== "") {
+            urlIframe += "&idMessage" + settings.idMessage;
+        }
+        iframe.src = urlIframe;
     };
 
     /**
