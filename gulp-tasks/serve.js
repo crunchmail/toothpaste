@@ -20,7 +20,7 @@ var configApi = require(configApiFile);
 /**
  * Generate iframe to emulate zimbra/zimlet in local
  */
-gulp.task('generate_iframe', ['release'],  function() {
+gulp.task('generate_iframe', ['release', 'embedded_js'],  function() {
     gulp.src('src/iframe_integration/*.html')
     .pipe(plugins.replace('ENV', argv.env))
 
@@ -44,7 +44,7 @@ gulp.task('embedded_js', function() {
  * localhost:4002 documentation
  */
 
-gulp.task("dev_server", ['generate_iframe', 'embedded_js'], function() {
+gulp.task("dev_server", ['generate_iframe'], function() {
     plugins.connect.server({
         root: "dist",
         port: "4000"
